@@ -1,0 +1,63 @@
+                           Python For Loops
+
+1. Print each character of a string.
+Explanation: Use a for loop to iterate through each character in a string sequence.
+
+
+for i in "kalyan" :
+    print(i)
+
+
+2. Print all even numbers from a list.
+Explanation: Iterate through a list and use a condition to check for even numbers.
+
+
+xyz = [1, 2, 5, 10, 15, 16, 19,20]
+
+for i in xyz :
+    
+    if i%2 == 0:
+        print(i)
+
+3. Calculate the sum of numbers in a tuple.
+Explanation: Use a for loop to iterate through a tuple and keep adding each number to a total variable.
+
+
+abc = (1,2,3,4,5)
+sum = 0
+
+for i in abc:
+    
+    sum+=i
+    
+print ("total sum of elements in tuple",sum)
+
+
+4. Print names from a list of strings.
+Explanation: Loop through a list of names and print each one.
+
+
+names = ["kalyan", "krishna", "ntr", "prabhas","ram"]
+
+for i in names:
+    print(i)
+
+
+5. Print square of numbers using range.
+Explanation: Use range to generate numbers, then square each number inside the loop.
+
+
+for i in range(1,10):
+    print(i*i)
+
+
+6. Count vowels in a string.
+Explanation: Loop through each character and check if it is a vowel using a condition.
+
+
+vowel_count = 0
+for i in "house":
+    if i in ["a","e","i","o","u"] :
+        vowel_count+=1
+        
+print("total no.of vowels",vowel_count)

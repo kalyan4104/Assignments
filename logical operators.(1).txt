@@ -1,0 +1,39 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> a = 10
+>>> b = 5
+>>> print(a > 3 and b < 10)
+True
+>>> x = 7
+>>> print(not (x < 10))
+False
+>>> x = 4
+>>> y = 12
+>>> print(x < 5 or y < 10)
+True
+>>> age = 18
+>>> has_id = False
+>>> print(age >=18 and has_id)
+False
+>>> logged_in = True
+>>> admin = False
+>>> print(logged_in or admin)
+True
+>>> is_sunny = False
+>>> have_umbrella = True
+>>> print(not is_sunny and have_umbrella)
+True
+>>> a = True
+>>> b = False
+>>> print(not (a or b))
+False
+>>> temp = 25
+>>> print(temp > 20 and temp < 30)
+True
+>>> marks = 45
+>>> print(not (marks >= 50 or marks == 49))
+True
+>>> x = 10
+>>> y = 0
+>>> print(not y and x > 5)
+True

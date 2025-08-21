@@ -1,0 +1,27 @@
+🔹 Question 3: Concat Strings & Find Length from List
+ Task: - List with mixed items - Extract only strings - Concatenate all strings - Print total length of final string
+
+list1 = ["kalyan", True, 100, 37.7, "deepu", [1,2,3], "krishna"]
+final_str = ""
+
+for a in list1 :
+    if type(a) == str :
+        final_str += a
+        
+print("concatenated string", final_str)
+print("total length", len(final_str))
+
+4)
+
+
+lis = [True, "nzb",10, "hyderabad", 77.7, "rainy season", 99, "345", 5, "56"]
+new_lis = []
+
+for a in lis :
+    if type(a) == int and 10 <= a <= 99 :
+        new_lis.append(a)
+        
+print(new_lis)
+
+
+

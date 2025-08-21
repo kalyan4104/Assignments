@@ -1,0 +1,35 @@
+ Question 1: YouTube Video Quality Selection
+ Scenario: A user is watching a YouTube video and the platform must select the appropriate video quality
+ based on two conditions: - Internet speed - Whether the user selected "Auto" mode or manual mode.
+ 💡 Logic Steps
+ : - Ask if the user selected "Auto" or "Manual" mode. - If "Auto": - If internet speed > 10 Mbps
+ → Play 1080p - Else if speed > 5 Mbps → Play 720p - Else if speed > 2 Mbps → Play 480p - Else → Play 240p 
+If "Manual": - Ask for selected quality (e.g., 240p, 480p, 720p, 1080p) - Play the selected quality
+ Expected Understanding: Learn to handle multiple nested conditions and simulate real-time
+ decision logic.
+
+
+
+mode = input("Select mode (Auto/Manual): ")
+
+if mode == "Auto":
+    speed = float(input("Enter your internet speed in Mbps: "))
+    if speed > 10:
+        quality = "1080p"
+    elif speed > 5:
+        quality = "720p"
+    elif speed > 2:
+        quality = "480p"
+    else:
+        quality = "240p"
+    print("Auto Mode: Playing video at", quality)
+
+elif mode == "Manual":
+    quality = input("Enter desired quality (240p, 480p, 720p, 1080p): ")
+    if quality == "240p" or quality == "480p" or quality == "720p" or quality == "1080p":
+        print("Manual Mode: Playing video at", quality)
+    else:
+        print("Invalid quality selected.")
+
+else:
+    print("Invalid mode selected. Please choose either 'Auto' or 'Manual'.")

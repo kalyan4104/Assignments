@@ -1,0 +1,78 @@
+
+
+
+1.)Print all vowels from list of single chars
+
+
+list1 = ["r","a","s","i","o","h"]
+
+for i in list1 :
+    if i in "aeiou" :
+        print(i)
+
+
+2.)Print all strs which are len > 5 and push to new list
+
+
+names = ["kalyan","deepu","raju","dhiru","sanju"]
+new_list = []
+
+for i in names :
+    if len(i)>5 :
+        print(i)
+        new_list.append(i)
+        
+print(new_list)
+        
+
+
+3.)Print all odd indices values in list
+
+
+xyz = ["kalyan",True,100,"sanjay",77.5,False,99,"krishna"]
+
+for i in range(0,len(xyz)) :
+    #print(i)
+    if i % 2 == 1 :
+        print(xyz[i])
+
+
+4.)Print all odd indices values and find only str and that too len>3 and len<5
+
+
+
+abc = ["kalyan","ravi","100",True,11,"krishna",99.9,False]
+new = []
+for i in range(0,len(abc)) :
+    
+    if i % 2 == 1 :
+       # print(abc[i])
+        new.append(abc[i])
+        
+        
+print(new)
+
+for a in new :
+    if type(a) == str and 3<len(a)<5 :
+        print(a)
+
+
+5.)Print all even indices values from list and push to new list
+
+ 
+e_list = [True,"sanju","kalyan",100,99.9,False,[1,2,3],27]
+
+new_list = []
+
+for i in range(0,len(e_list)) :
+    if i % 2 == 0 :
+        new_list.append(e_list[i])
+        
+print(new_list)
+
+
+
+
+
+
+
